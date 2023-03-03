@@ -2,6 +2,7 @@
 function Get-CheckInfo {
     param ($filePath, $checkType, $CheckSumInput, $fileHash)
     $check = $false
+    #checks if the user inputes a valid check sum name
     while ($check -eq $false) 
     {   
         $checkType = Read-Host -Prompt 'Enter CheckSum type (or type "options" for list of options)'
